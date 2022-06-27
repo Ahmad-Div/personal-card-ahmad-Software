@@ -127,12 +127,13 @@ hr {
 
 
 footer {
-    position: absolute;
+    position: fixed;
     text-align: center;
     width: 100%;
-    bottom: 10px;
+    bottom: 0;
     color: white;
 }
+
 
 
 @media(max-width:388px) {
