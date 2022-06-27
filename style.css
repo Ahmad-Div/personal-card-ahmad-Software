@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Bitter&family=Fira+Sans:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Inconsolata:wght@600&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Lobster&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100&display=swap');
+
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url(/profile-card-component-main/images/background.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: hsl(227, 10%, 46%);
+}
+
+
+p {
+    color: hsl(227, 10%, 46%);
+    font-size: 0.8rem;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+p:hover {
+    transform: scale(1.1);
+    color: hsl(185, 75%, 39%);
+}
+
+main {
+    padding-top: 9rem;
+}
+
+hr {
+    color: black;
+    width: 90%;
+    background-color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+#img-div {
+    margin-bottom: 0;
+    transition: 0.7s ease;
+
+}
+
+#img-div:hover {
+    transform: scale(1.1);
+}
+
+#pattern-img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 22rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 22rem;
+    position: relative;
+}
+
+.card-content {
+    margin-top: 0;
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#my-pic {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    align-items: center;
+    left: 8rem;
+    top: 5.5rem;
+    border-radius: 50px;
+    transition: 0.7s ease;
+}
+
+#my-pic:hover {
+    transform: translate(10px, 10px);
+}
+
+
+.card-content #city {
+    padding-bottom: 2rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+
+
+
+footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+    color: white;
+}
+
+
+@media(max-width:388px) {
+    .card {
+        width: 18rem;
+    }
+
+    #pattern-img {
+        width: 18rem;
+    }
+
+    #my-pic {
+        width: 5rem;
+        height: 5rem;
+        left: 6.5rem;
+        top: 5rem
+    }
+}
+
+@media(width:280px) {
+    .card {
+        width: 16rem;
+    }
+
+    #pattern-img {
+        width: 16rem;
+    }
+
+    #my-pic {
+        width: 4rem;
+        height: 4rem;
+        left: 6rem;
+        top: 4.5rem
+    }
+}
